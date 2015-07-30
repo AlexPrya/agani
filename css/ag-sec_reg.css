@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-sec_reg {
+  border: 1px solid #dadada;
+  background-color: #f7f7f7;
+  padding: 30px 40px;
+  margin: 0 0 30px;
+}
+.ag-sec_reg__answ {
+  padding: 0 0 0 20px;
+  position: relative;
+  line-height: 20px;
+}
+.ag-sec_reg__answ:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #49ccf0;
+}
+.ag-sec_reg__control {
+  width: 200px;
+}
+.ag-sec_reg__control:first-of-type {
+  margin: 0 45px 0 0;
+}
+.ag-sec_reg__submit {
+  padding: 7px 20px 7px 47px;
+  position: relative;
+}
+.ag-sec_reg__submit:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  width: 24px;
+  height: 25px;
+  background-image: url('../img/sprite.png');
+  background-position: -36px 0px;
+}

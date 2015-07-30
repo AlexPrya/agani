@@ -1,0 +1,453 @@
+@import 'variables';
+@import 'elements';
+//@import '../img/sprite.css';
+
+.ag {
+
+    &-lk {
+
+        &-menu {
+            margin: 20px 0;
+            padding: 0;
+            width: 100%;
+
+            &__item {
+                list-style: none;
+                border-radius: 2px;
+                width: 100%;
+                border-bottom: 1px solid @border-gray-medium;
+
+                &:last-of-type {
+                    border: none;
+                }
+
+                &.active {
+                    background-color: @brand-color-first;
+                    border: none;
+
+                    .ag-lk-menu__item-link {
+                        color: @btn-text-color;
+
+                        &:hover,
+                        &:active {
+                            color: @btn-text-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &-link {
+                    padding: 15px 40px;
+                    display: block;
+                    margin: 0 auto;
+                    color: @text-color;
+
+                    &:hover,
+                    &:active {
+                        color: @text-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &__link {
+                display: block;
+                color: @text-color;
+                background-color: @body-bg;
+                text-transform: uppercase;
+                font-size: 17px;
+                padding: 11px 20px;
+                border: none;
+
+                &:hover,
+                &:active {
+                    background-color: @brand-color-first;
+                    color: @btn-text-color;
+                    text-decoration: none   ;
+                }
+            }
+        }
+
+        &-title {
+            border-bottom: 2px solid @success-color;
+            font-weight: normal;
+            padding: 10px 15px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        &-info {
+
+            &_block {
+                display: block;
+                width: 100%;
+                padding: 30px;
+                margin: 20px 0;
+                border: 1px solid @border-gray-medium;
+                position: relative;
+                color: @text-color;
+                .clearfix();
+
+                &.info {
+
+                    &:before {
+                        width: 23px;
+                        height: 23px;
+                        background-position: -222px -0px;
+                        margin-top: -12px;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background-image: url("../img/sprite.png");
+                    top: 50%;
+                    left: 5%;
+                }
+
+                &__text {
+                    float: left;
+                    width: 100%;
+                    padding: 0 0 0 7% ;
+                }
+            }
+
+            &_link {
+                display: block;
+                text-align: center;
+                margin: 20px 0;
+                border: 1px solid @brand-color-first;
+                position: relative;
+                color: @text-color;
+                .clearfix();
+
+                &:hover,
+                &:active {
+                    text-decoration: none;
+                    color: @text-color;
+                    border: 1px solid @brand-color-second;
+                }
+
+                &__text {
+                    text-align: left;
+                    display: inline-block;
+                    position: relative;
+                    padding: 30px 0 30px 45px;
+                    margin: 0 30px;
+
+
+                    &.info {
+
+                        &:before {
+                            width: 23px;
+                            height: 23px;
+                            background-position: -222px -0px;
+                            margin-top: -12px;
+                        }
+                    }
+
+                    &.pro {
+
+                        &:before {
+                            width: 33px;
+                            height: 14px;
+                            background-position: -157px -24px;
+                            margin-top: -7px;
+                            left: 0;
+                        }
+                    }
+
+                    &.prfl {
+
+                        &:before {
+                            width: 24px;
+                            height: 25px;
+                            background-position: -62px -0px;
+                            margin-top: -13px;
+                            left: 0;
+                        }
+                    }
+
+                    &.bskt {
+
+                        &:before {
+                            width: 30px;
+                            height: 25px;
+                            background-position: -86px -0px;
+                            margin-top: -13px;
+                            left: 0;
+                        }
+                    }
+
+                    &.pnsl {
+
+                        &:before {
+                            width: 24px;
+                            height: 24px;
+                            background-position: -177px -0px;
+                            margin-top: -12px;
+                            left: 0;
+                        }
+                    }
+
+                    &.pn {
+
+                        &:before {
+                            width: 11px;
+                            height: 24px;
+                            background-position: -166px -0px;
+                            margin-top: -12px;
+                            left: 0;
+                        }
+                    }
+
+                    &.ml {
+
+                        &:before {
+                            width: 25px;
+                            height: 20px;
+                            background-position: -266px -0px;
+                            margin-top: -10px;
+                            left: 0;
+                        }
+                    }
+
+                    &.rprt {
+
+                        &:before {
+                            width: 26px;
+                            height: 28px;
+                            background-position: -0px -0px;
+                            margin-top: -14px;
+                            left: 0;
+                        }
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        background-image: url("../img/sprite.png");
+                        top: 50%;
+                    }
+
+                    &:hover,
+                    &:active {
+                        text-decoration: none;
+                        color: @text-color;
+                    }
+                }
+            }
+        }
+
+        &-form {
+
+            &__group_name {
+                font-size: 22px;
+                margin: 30px 0;
+                .clearfix();
+            }
+
+            &-field {
+                margin: 20px 0;
+                .clearfix();
+
+                &__submit {
+                    text-align: right;
+
+                    input {
+                        text-align: center;
+                    }
+                }
+
+                &__name {
+                    font-weight: normal;
+                    font-size: 16px;
+                    position: relative;
+
+                    a {
+                        color: @text-color;
+                        text-decoration: underline;
+
+                        &:hover,
+                        &:active {
+                            color: @text-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &__checkbox {
+
+                    &-field {
+                        margin: 6px 0;
+                    }
+                }
+
+                &__inp {
+
+                    &.alt {
+                        padding: 6px 12px 46px;
+                        height: 76px;
+                        background-color: @body-bg !important;
+                    }
+
+                    &.horisontal {
+                        height: 32px;
+                    }
+                }
+
+                &__plus {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 50%;
+                    margin: 0 -12px 0 0;
+                    width: 23px;
+                    height: 21px;
+                    border: none;
+                    background: none;
+                    outline: none !important;
+
+                    &:before {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 23px;
+                        height: 23px;
+                        background-image: url('../img/sprite.png');
+                        background-position: -259px -0px;
+                        top: 0;
+                        right: 0;
+                        outline: none !important;
+                    }
+
+                    &-block {
+                        position: relative;
+
+                        &.inline {
+                            .ag-lk-form-field__inp {
+                                float: left;
+                                width: 90%;
+                            }
+                            .ag-lk-form-field__plus {
+                                float: right;
+                                width: 10%;
+                                position: relative;
+                                bottom: -5px;
+                                right: 0;
+                                margin: 0;
+
+                                &:before {
+                                    margin: 0 auto;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .ag-lk {
+
+        &-info {
+            &_link {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1270px) {
+.ag-lk {
+
+    &-info {
+        &_link {
+            font-size: 17px;
+        }
+    }
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .ag-lk {
+
+        &-info {
+            &_link {
+                font-size: 15px;
+                height: 110px;
+            }
+        }
+
+        &-form {
+
+            &-field {
+
+                &__plus {
+//                    bottom: 15px;
+//                    right: 15px;
+                }
+
+                &__name {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+    @media (max-width: 768px) {
+        .ag-lk {
+
+            &-menu {
+
+                &__item {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 25px;
+                            right: 20px;
+                            width: 7px;
+                            height: 4px;
+                            background-image: url('../img/sprite.png');
+                            background-position: -0px -26px;
+                        }
+                    }
+                }
+            }
+
+            &-form {
+
+                &-field {
+
+                    &__name {
+                        font-size: 14px;
+                    }
+
+                    &__submit {
+                        text-align: center;
+                    }
+                }
+            }
+
+            &-info {
+
+                &_link {
+                    font-size: 17px;
+                }
+            }
+
+        }
+    }

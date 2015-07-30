@@ -1,0 +1,30 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*header*/
+  /*/header*/
+  /*footer*/
+}
+html #main,
+body #main {
+  width: 100%;
+  min-height: 100%;
+}
+html header,
+body header {
+  height: 194px;
+  width: 100%;
+}
+html footer,
+body footer {
+  width: 100%;
+  height: 100px;
+  margin-top: -194px;
+}
+html .ex_footer,
+body .ex_footer {
+  width: 100%;
+  height: 100px;
+}

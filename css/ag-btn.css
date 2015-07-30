@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  text-decoration: none!important;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+.ag-btn:hover,
+.ag-btn:active {
+  color: #ffffff;
+}
+.ag-btn-link {
+  padding: 9px 0;
+  color: #0077cb;
+  text-decoration: underline;
+}
+.ag-btn-link:hover {
+  text-decoration: none;
+  color: #0077cb;
+}
+.ag-btn-big {
+  min-width: 100px;
+  padding: 10px 20px;
+}
+.ag-btn-medium {
+  padding: 7px 10px;
+}
+.ag-btn-long {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ag-btn-s_long {
+  padding: 0 50px;
+  font-size: 28px;
+}
+.ag-btn-table {
+  min-width: 85px;
+}
+.ag-btn-first {
+  background: #49ccf0;
+}
+.ag-btn-first:hover {
+  background: #47bcdc;
+}
+.ag-btn-first:active {
+  background: #35aaca;
+}
+.ag-btn-first[disabled],
+.ag-btn-first.disabled {
+  background: #a0f3ff;
+}
+.ag-btn-second {
+  background: #f2a122;
+}
+.ag-btn-second:hover {
+  background: #de9524;
+}
+.ag-btn-second:active {
+  background: #cc8414;
+}
+.ag-btn-second[disabled],
+.ag-btn-second.disabled {
+  background: #ffd176;
+}
+.ag-btn-cancel {
+  background: #b32222;
+}
+.ag-btn-cancel:hover {
+  background: #9f2121;
+}
+.ag-btn-cancel:active {
+  background: #8d1515;
+}
+.ag-btn-cancel[disabled],
+.ag-btn-cancel.disabled {
+  background: #cc6464;
+}
+.ag-btn-success {
+  background: #97ca75;
+}
+.ag-btn-success:hover {
+  background: #8ab66d;
+}
+.ag-btn-success:active {
+  background: #76a458;
+}
+.ag-btn-success[disabled],
+.ag-btn-success.disabled {
+  background: #d3e4c8;
+}
+.ag-btn-disabled {
+  background: #d7d7d7;
+}
+.ag-btn__icon {
+  margin: -3px 5px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: #f2a122;
+  color: #ffffff;
+  padding: 0 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+}
+.ag-btn__text.ag-btn-dotted {
+  border-bottom: 1px dotted;
+}

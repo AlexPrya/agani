@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Заголовок</title>
+    <link rel="stylesheet" type="text/css" href="img/sprite.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap-theme.css" />
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+</head>
+<body>
+<header>
+    <div class="ag-header-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                    <div class="ag-header-geo">
+                        <div class="ag-header-geo__name hidden-xs">Регион:</div>
+                        <div class="ag-header-geo__select">
+                            <a href="#" class="ag-header-geo__val">Москва</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                    <div class="ag-header-personal row">
+                        <div class="ag-header-personal__item">
+                            <a class="ag-header-personal__link" href="#">
+                                <span class="hidden-xs">Помощь</span>
+                                <span class="ag-header-personal__icon circle-question-mark"></span>
+                            </a>
+                        </div>
+                        <div class="ag-header-personal__item">
+                            <a class="ag-header-personal__link" href="#">
+                                <span class="hidden-xs">Регистрация</span>
+                                <span class="ag-header-personal__icon notepad_w1"></span>
+                            </a>
+                        </div>
+                        <div class="ag-header-personal__item">
+                            <a class="ag-header-personal__link" href="#">
+                                <span class="hidden-xs">Вход</span>
+                                <span class="ag-header-personal__icon key_w"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ag-header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-6 row ag-header-logo">
+                    <div class="col-xs-6 col-sm-5 col-md-4 ag-header-logo__img">
+                        <img class="img-responsive" src="img/main-logo.png" alt=""/>
+                    </div>
+                    <div class="col-xs-6 col-sm-7 col-md-8 ag-header-logo__tagline">
+                        Покупка и продажа</br>
+                        сельскохозяйственных животных и продуктов
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-4 col-md-5 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 ag-header-banner row">
+                    <div class="row ag-header-banner__block">
+                        <div class="col-md-7 col-sm-12 ag-header-banner__text">
+                            Помогите сайту стать лучше -</br> делитесь вашими идеями!
+                        </div>
+                        <div class="col-md-5 ag-header-banner__button hidden-sm">
+                            <a class="ag-btn ag-btn-big ag-btn-success" href="#">Поделиться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ag-header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7 col-sm-9 col-md-9 col-lg-10">
+                    <ul class="hidden-sm hidden-md hidden-lg ag-header-menu row">
+                        <li class="col-xs-4 ag-header-menu__item">
+                            <a class="ag-header-menu__link gamburger" href="#"></a>
+                        </li>
+                        <li class="col-xs-8 ag-header-menu__item h_search">
+                            <div class="row">
+                                <input class="ag-header-menu__link h_search col-xs-12" type="text"/>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="hidden-xs ag-header-menu">
+                        <li class="ag-header-menu__item">
+                            <a class="ag-header-menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="ag-header-menu__item">
+                            <a class="ag-header-menu__link" href="#">Объявления</a>
+                        </li>
+                        <li class="ag-header-menu__item">
+                            <a class="ag-header-menu__link" href="#">Профессионалы</a>
+                        </li>
+                        <li class="ag-header-menu__item">
+                            <a class="ag-header-menu__link" href="#">Тендеры</a>
+                        </li>
+                        <li class="ag-header-menu__item">
+                            <a class="ag-header-menu__link" href="#">Блоги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 col-sm-3 col-md-3 col-lg-2">
+                    <div class="ag-social row">
+                        <div class="col-xs-12">
+                            <a href="#" class="ag-social__item col-xs-3 col-sm-3">
+                                <span class="ag-social__icon vk"></span>
+                            </a>
+                            <a href="#" class="ag-social__item col-xs-3 col-sm-3 alt"
+                                    ><span class="ag-social__icon google"></span>
+                            </a>
+                            <a href="#" class="ag-social__item col-xs-3 col-sm-3"
+                                    ><span class="ag-social__icon fb"></span>
+                            </a>
+                            <a href="#" class="ag-social__item col-xs-3 col-sm-3">
+                                <span class="ag-social__icon ok"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="hidden-xs hidden-sm hidden-md hidden-lg row ag-header-menu">
+                    <li class="col-xs-12 ag-header-menu__item">
+                        <a class="ag-header-menu__link" href="#">Главная</a>
+                    </li>
+                    <li class="col-xs-12 ag-header-menu__item">
+                        <a class="ag-header-menu__link" href="#">Объявления</a>
+                    </li>
+                    <li class="col-xs-12 ag-header-menu__item">
+                        <a class="ag-header-menu__link" href="#">Профессионалы</a>
+                    </li>
+                    <li class="col-xs-12 ag-header-menu__item">
+                        <a class="ag-header-menu__link" href="#">Тендеры</a>
+                    </li>
+                    <li class="col-xs-12 ag-header-menu__item">
+                        <a class="ag-header-menu__link" href="#">Блоги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<content>
+<div class="container">
+    <div class="row">
+        <ul class="hidden-xs col-sm-12 ag-bread">
+            <li class="ag-bread__item">
+                <a class="ag-bread__link" href="#">Главная</a>
+            </li>
+            <li class="ag-bread__item">
+                Личный кабинет
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+<div class="row ag-lk">
+<div class="col-xs-12 col-lg-3 col-md-3 col-sm-4">
+    <ul class="ag-lk-menu">
+        <li class="ag-lk-menu__item active">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+        <li class="ag-lk-menu__item">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+        <li class="ag-lk-menu__item">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+        <li class="ag-lk-menu__item">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+        <li class="ag-lk-menu__item">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+        <li class="ag-lk-menu__item">
+            <a class="ag-lk-menu__item-link" href="#">Информация</a>
+        </li>
+    </ul>
+    <div class="hidden-xs">
+        <div class="gray-box">
+            <div class="row">
+                <div class="col-xs-12 centered">
+                    <div class="gray-box__field title-big"><span class="basket_g"></span>Поддержка</div>
+                </div>
+                <div class="gray-box__name col-xs-12">
+                    Напишите нам
+                </div>
+                <div class="col-xs-12">
+                    <div class="gray-box__field"><span class="basket_g"></span>support@domain.com</div>
+                </div>
+                <div class="gray-box__name col-xs-12">
+                    Оставьте пожелания
+                </div>
+                <div class="col-xs-12">
+                    <div class="gray-box__field"><span class="basket_g"></span>support@domain.com</div>
+                </div>
+                <div class="gray-box__name col-xs-12">
+                    Связаться сейчас
+                </div>
+                <div class="col-xs-12 centered">
+                    <a class="ag-btn ag-btn-medium ag-btn-first ag-btn-long gray-box__button" href="#">ОТПРАВИТЬ СООБЩЕНИЕ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-8">
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="ag-lk-title responsive_title">Личный кабинет ПРОфессионала  <span>Краснознаменный</span></p>
+            <p class="wlkm">Добавить объявление</p>
+            <form class="ag-lk-form row" role="form">
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_title" class="ag-lk-form-field__name required">Заголовок</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Введите заголовок объявления" id="acc_title" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_type" class="ag-lk-form-field__name">Тип предложения</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <select class="ag-lk-form-field__inp form-control" id="acc_type">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_region" class="ag-lk-form-field__name">Регион</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Московская область" id="acc_region" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_category" class="ag-lk-form-field__name">Категория</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <select class="ag-lk-form-field__inp form-control" id="acc_category">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_props" class="ag-lk-form-field__name">Характеристики</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <div class="ag-lk-form-field__plus-block">
+                            <input class="ag-lk-form-field__inp alt form-control" readonly placeholder="Добавьте породу, возраст и пол животного" id="acc_props" type="text"/>
+                            <a class="ag-lk-form-field__plus circle-plus" data-toggle="modal" data-target="#modal" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_text" class="ag-lk-form-field__name">Текст</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <div class="ag-lk-form-field__plus-block">
+                            <textarea class="form-control" placeholder="Введите текст объявления" name="acc_text" id="acc_text" cols="20" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_photo" class="ag-lk-form-field__name">Фото</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <div class="ag-lk-form-field__plus-block">
+                            <input class="ag-lk-form-field__inp alt form-control" readonly placeholder="Добавьте фото" id="acc_photo" type="text"/>
+                            <input class="ag-lk-form-field__plus" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_region" class="ag-lk-form-field__name">Цена</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Укажите цену" id="acc_region" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form__group_name">
+                    <div class="col-lg-12 col-md-12 col-sm-12">Контакты</div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_cont_name" class="ag-lk-form-field__name required">Контактное лицо</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Ваше имя" id="acc_cont_name" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_company" class="ag-lk-form-field__name">Компания</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Компания" id="acc_company" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_phone" class="ag-lk-form-field__name required">Телефон</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <div class="ag-lk-form-field__plus-block inline">
+                            <input class="ag-lk-form-field__inp form-control" placeholder="Ваш телефон" id="acc_phone" type="text"/>
+                            <a href="#" class="ag-lk-form-field__plus circle-plus"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_email" class="ag-lk-form-field__name">Email</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Ваш контактный Email" id="acc_email" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <label for="acc_site" class="ag-lk-form-field__name">Сайт</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <input class="ag-lk-form-field__inp form-control" placeholder="Адрес Вашего сайта" id="acc_site" type="text"/>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-6 col-md-11 col-sm-10 col-xs-10">
+                        <label for="acc_email" class="ag-lk-form-field__name">
+                            <span class="text-small">Согласие с <a href="#">политикой конфидециальности</a></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-6 col-md-1 col-sm-2 col-xs-2 sm_r">
+                        <input class="ag-lk-form-field__checkbox" id="cow" type="checkbox"/>
+                        <label for="cow" class=""></label>
+                    </div>
+                </div>
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ag-lk-form-field__submit">
+                        <input class="ag-btn ag-btn-big ag-btn-success" type="text" value="Добавить"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+    <div class="gray-box centered">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="gray-box__field title-big"><span class="basket_g"></span>Поддержка</div>
+            </div>
+            <div class="col-xs-6">
+                <div class="gray-box__field"><span class="basket_g"></span>support@domain.com</div>
+            </div>
+            <div class="col-xs-6">
+                <div class="gray-box__field"><span class="basket_g"></span>support@domain.com</div>
+            </div>
+            <div class="col-xs-12"><a class="ag-btn ag-btn-big ag-btn-first" href="#">Отправить сообщение</a></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</content>
+<footer class="ag-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <img class="ag-footer-logo" src="img/main-logo.png" alt=""/>
+                <div class="ag-footer-descr ag-text-medium">
+                    Доска объявлений о покупке и продаже  сельскохозяйственных животных и продуктов
+                </div>
+                <div class="ag-social footer">
+                    <a href="#" class="ag-social__item">
+                        <span class="ag-social__icon vk"></span>
+                    </a>
+                    <a href="#" class="ag-social__item alt"
+                            ><span class="ag-social__icon google"></span>
+                    </a>
+                    <a href="#" class="ag-social__item"
+                            ><span class="ag-social__icon fb"></span>
+                    </a>
+                    <a href="#" class="ag-social__item">
+                        <span class="ag-social__icon ok"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <ul class="ag-footer-list">
+                    <li class="ag-footer-list__title">Мой аккаунт</li>
+                    <li class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">сообщения</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">тендеры</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">рассылки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">настройки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">выход</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <ul class="ag-footer-list">
+                    <li class="ag-footer-list__title">Мой аккаунт</li>
+                    <li class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">сообщения</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">тендеры</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">рассылки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">настройки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">выход</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <ul class="ag-footer-list">
+                    <li class="ag-footer-list__title">Мой аккаунт</li>
+                    <li class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">сообщения</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">тендеры</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">рассылки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">настройки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">выход</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2">
+                <ul class="ag-footer-list">
+                    <li class="ag-footer-list__title">Мой аккаунт</li>
+                    <li class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">сообщения</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">тендеры</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">рассылки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">настройки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">выход</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-2 col-md-offset-0">
+                <ul class="ag-footer-list menu">
+                    <li class="ag-footer-list__title">Мой аккаунт</li>
+                    <li class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">сообщения</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">тендеры</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">рассылки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">настройки</a>
+                    </li>
+                    <li class="ag-footer-list__item" class="ag-footer-list__item">
+                        <a class="ag-footer-list__link" href="#">выход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ag-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                    <div class="copyright">
+                        © 2015 Copyright
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                    <ul class="ag-footer-menu">
+                        <li class="ag-footer-menu__item">
+                            <a class="ag-footer-menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="ag-footer-menu__item">
+                            <a class="ag-footer-menu__link" href="#">Пользовательское соглашение</a>
+                        </li>
+                        <li class="ag-footer-menu__item">
+                            <a class="ag-footer-menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="ag-lk-title">Название модали</h4>
+            </div>
+            <div class="modal-body">
+                <form class="ag-lk-form row" role="form">
+                    <div class="ag-lk-form-field form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-4">
+                            <label for="" class="ag-lk-form-field__name">Тип предложения</label>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-8">
+                            <select class="ag-lk-form-field__inp form-control" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ag-lk-form-field form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-4">
+                            <label for="" class="ag-lk-form-field__name">Тип предложения</label>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-8">
+                            <select class="ag-lk-form-field__inp form-control" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ag-lk-form-field form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-4">
+                            <label for="" class="ag-lk-form-field__name">Тип предложения</label>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-8">
+                            <select class="ag-lk-form-field__inp form-control" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ag-lk-form-field form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                            <div class="ag-lk-form-field__name">Пол и возраст</div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="ag-lk-form-field__plus-block">
+                                        <div class="ag-lk-form-field__checkbox-field">
+                                            <input id="cow1" type="checkbox"/>
+                                            <label for="cow1" class="ag-lk-form-field__name">Корова</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="ag-lk-form-field__plus-block">
+                                        <div class="ag-lk-form-field__checkbox-field">
+                                            <input id="cow2" type="checkbox"/>
+                                            <label for="cow2" class="ag-lk-form-field__name">Корова</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="ag-lk-form-field__plus-block">
+                                        <div class="ag-lk-form-field__checkbox-field">
+                                            <input id="cow3" type="checkbox"/>
+                                            <label for="cow3" class="ag-lk-form-field__name">Корова</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="ag-lk-form-field__plus-block">
+                                        <div class="ag-lk-form-field__checkbox-field">
+                                            <input id="cow4" type="checkbox"/>
+                                            <label for="cow4" class="ag-lk-form-field__name">Корова</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="ag-lk-form-field__plus-block">
+                                        <div class="ag-lk-form-field__checkbox-field">
+                                            <input id="cow5" type="checkbox"/>
+                                            <label for="cow5" class="ag-lk-form-field__name">Корова</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="ag-lk-form-field form-group">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centered">
+                        <input class="ag-btn ag-btn-big ag-btn-success centered" type="text" value="Добавить"/>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+</body>
+</html>
+</html>

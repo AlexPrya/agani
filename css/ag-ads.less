@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-ads {
+
+        &-slider {
+            margin: 30px 0 0;
+            .clearfix();
+
+            &-item {
+                display: inline-block;
+                position: relative;
+//                margin: 0 40px 0 0;
+
+                &__img {
+                    opacity: 0.5;
+                    display: block;
+                    position: relative;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+
+                }
+
+                &__iconbg {
+
+                }
+
+                &__name {
+                    display: block;
+                    margin: 0 0 15px;
+                    font-size: 16px;
+                    color: @text-color;
+
+                    &:hover,
+                    &:active {
+                        color: @text-color;
+                    }
+                }
+
+                &__date {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

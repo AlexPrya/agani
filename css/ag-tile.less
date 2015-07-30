@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-tile {
+        width: 100%;
+        margin: 30px 0;
+        .clearfix();
+
+        &.new_pro {
+
+            .ag {
+
+                &-tile {
+
+                    &-item {
+                        width: 100%;
+                        margin: 6px 0;
+
+                        &__img {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        &__title {
+                            margin: 18px 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-item {
+            width: 50%;
+            float: left;
+            margin: 20px 0;
+
+            &__img {
+                width: 140px;
+                height: 140px;
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__address {
+                font-size: 12px;
+            }
+
+            &__link {
+                font-size: 12px;
+                cursor: pointer;
+            }
+
+            &__def_lnk {
+                color: @text-color;
+
+                &:hover,
+                &:active {
+                    color: @text-color;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-table {
+  width: 100%;
+  margin: 30px 0;
+}
+.ag-table-select {
+  position: relative;
+}
+.ag-table-select__item {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 15px !important;
+}
+.ag-table-select__delete {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  color: #000000;
+}
+.ag-table-select__delete:hover,
+.ag-table-select__delete:active {
+  color: #000000;
+  text-decoration: none;
+}
+.ag-table.active {
+  display: table !important;
+}
+.ag-table.lk .ag-table-col {
+  padding: 0 5px;
+}
+.ag-table.lk .ag-table-row {
+  height: 95px;
+}
+.ag-table.lk .ag-table-row:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
+.ag-table-row {
+  line-height: 46px;
+}
+.ag-table-col__icon {
+  float: right;
+  margin: 0 10px 0 0;
+}
+.ag-table-col__icon.check {
+  margin: -10px 0 -10px 0;
+}

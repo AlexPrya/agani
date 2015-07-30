@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-sec_reg {
+        border: 1px solid @border-gray-medium;
+        background-color: @body-fg;
+        padding: 30px 40px;
+        margin: 0 0 30px;
+
+        &__answ {
+            padding: 0 0 0 20px;
+            position: relative;
+            line-height: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                background-color: @brand-color-first;
+            }
+        }
+
+        &__control {
+            width: 200px;
+
+            &:first-of-type {
+                margin: 0 45px 0 0;
+            }
+        }
+
+        &__submit {
+            padding: 7px 20px 7px 47px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 20px;
+                width: 24px;
+                height: 25px;
+                background-image: url('@{path-sprite}');
+                background-position: -36px -0px;
+            }
+        }
+    }
+
+
+}

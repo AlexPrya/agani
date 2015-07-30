@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-content-field {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.ag-content-field.alt_bg {
+  background-image: url("../img/alt_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.ag-content-block {
+  padding: 30px 0;
+}
+.ag-content-block__head {
+  width: 100%;
+  height: 40px;
+}
+.ag-content-block__head.first {
+  border-bottom: 2px solid #49ccf0;
+}
+.ag-content-block__head.first .ag-content-block__item.active {
+  background-color: #49ccf0;
+}
+.ag-content-block__head.second {
+  border-bottom: 2px solid #f2a122;
+}
+.ag-content-block__head.second .ag-content-block__item.active {
+  background-color: #f2a122;
+}
+.ag-content-block__head.third {
+  border-bottom: 2px solid #97ca75;
+}
+.ag-content-block__head.third .ag-content-block__item.active {
+  background-color: #97ca75;
+}
+.ag-content-block__title {
+  font-size: 22px;
+  padding: 0 10px;
+  white-space: nowrap;
+  float: left;
+}
+.ag-content-block__menu {
+  padding: 0;
+  margin: 0;
+}
+.ag-content-block__item {
+  font-size: 16px;
+  padding: 9px 10px;
+  list-style: none;
+  float: right;
+  cursor: pointer;
+}
+.ag-content-block__item.active {
+  color: #ffffff;
+}
+.ag-content__text {
+  text-indent: 20px;
+}
+@media (max-width: 768px) {
+  .ag-content-block__head {
+    position: relative;
+  }
+  .ag-content-block__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .ag-content-block__item {
+    display: none;
+  }
+  .ag-content-block__item.active {
+    display: block;
+    padding: 9px 20px 9px 10px;
+    position: relative;
+  }
+  .ag-content-block__item.active:before {
+    content: '';
+    background-image: url("../img/sprite.png");
+    width: 7px;
+    height: 4px;
+    background-position: 0px -26px;
+    top: 18px;
+    right: 6px;
+    position: absolute;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ag-content-block__head {
+    position: relative;
+  }
+  .ag-content-block__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .ag-content-block__item {
+    display: none;
+  }
+  .ag-content-block__item.active {
+    display: block;
+    padding: 9px 20px 9px 10px;
+    position: relative;
+  }
+  .ag-content-block__item.active:before {
+    content: '';
+    background-image: url("../img/sprite.png");
+    width: 7px;
+    height: 4px;
+    background-position: 0px -26px;
+    top: 18px;
+    right: 6px;
+    position: absolute;
+  }
+}

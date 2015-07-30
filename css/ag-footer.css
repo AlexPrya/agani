@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-footer {
+  padding: 30px 0 0;
+  background-color: #cdcdcd;
+  border-top: 1px solid #7b7b7b;
+}
+.ag-footer__descr {
+  padding: 10px 0;
+}
+.ag-footer-bottom {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #818181;
+}
+.ag-footer-list__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0 0 30px;
+}
+.ag-footer-list__item {
+  list-style: none;
+  text-transform: capitalize;
+}
+.ag-footer-list__link {
+  color: #000000;
+}
+.ag-footer-list__link:hover {
+  color: #000000;
+}
+.ag-footer-menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.ag-footer-menu__item {
+  list-style: none;
+  float: left;
+  border-left: 1px solid #444444;
+  margin: 15px 0;
+}
+.ag-footer-menu__item:first-of-type {
+  border: none;
+}
+.ag-footer-menu__link {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-size: 12px;
+}
+.ag-footer-menu__link:hover {
+  color: #ffffff;
+}
+@media (min-width: 1270px) {
+  .ag-footer-bottom {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ag-footer-list.menu .ag-footer-list__item {
+    float: left;
+    margin: 0 30px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .ag-footer-list.menu .ag-footer-list__item {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  .ag-footer-menu {
+    float: none;
+    text-align: center;
+  }
+  .ag-footer-menu__item {
+    float: none;
+    display: inline-block;
+  }
+}

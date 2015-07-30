@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-slider {
+
+        &-item {
+            width: 100%;
+            height: 600px;
+
+            &__bg {
+                width: inherit;
+                height: inherit;
+                background-position: center;
+                background-size: cover;
+            }
+
+            &__descr {
+                padding: 100px 0 0 0;
+                font-size: 28px;
+                color: @btn-text-color;
+
+                .title-big {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}

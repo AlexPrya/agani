@@ -1,0 +1,122 @@
+@import "elements";
+//
+// Variables
+// --------------------------------------------------
+
+//== Path
+//
+//##
+@path-image:			    '../img/';
+@path-sprite:				'@{path-image}sprite.png';
+
+
+//== Colors
+//
+//## brand colors.
+@brand-color-first:     #49ccf0;
+@brand-color-second: 	#f2a122;
+
+
+// Button colors
+@btn-bg-disabled:       #d7d7d7;
+
+@btn-text-color:        #fff;
+@btn-text-disabled:     @text-color;
+
+@btn-cancel:            #b32222;
+
+// social colors
+@social-first-color:     #758ab7;
+@social-second-color:     #e78174;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+@body-fg:               #f7f7f7;
+@footer-bg:             #cdcdcd;
+@footer-fg:             #818181;
+
+@body-error-bg:			#ffbcbc;
+
+
+//** Global text color on `<body>`.
+@text-color:            #000;
+//** Global textual link color.
+@link-color:            #0077cb;
+//** Link hover color.
+@link-hover-color:      @link-color;
+//** Breadcrump color.
+@bread-color:           #202020;
+//** Breadcrump hover color.
+@bread-hover-color:           @text-color;
+
+//** Global error color.
+@error-color: #e10000;
+
+@border-gray-light:     #e1e1e1;
+@border-gray-medium:    #dadada;
+@border-gray-dark:      #7b7b7b;
+@border-gray-darkest:   #444444;
+
+
+@success-color:         #97ca75;
+
+
+
+// fonts
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/firasans-regular.eot');
+    src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-regular.woff2') format('woff2'),
+    url('../fonts/firasans-regular.woff') format('woff'),
+    url('../fonts/firasans-regular.ttf') format('truetype'),
+    url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/firasans-bold.eot');
+    src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-bold.woff2') format('woff2'),
+    url('../fonts/firasans-bold.woff') format('woff'),
+    url('../fonts/firasans-bold.ttf') format('truetype'),
+    url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/firasans-medium.eot');
+    src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-medium.woff2') format('woff2'),
+    url('../fonts/firasans-medium.woff') format('woff'),
+    url('../fonts/firasans-medium.ttf') format('truetype'),
+    url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+@z-index-preview: 900;
+@z-index-loader: 1500;
+
+
+// TODO: а надо ли???
+//== Site constants
+@ag-top-panel-height:       43px;
+@ag-top-main-height:        104px;
+@ag-top-menu-height:        47px;
+
+@ag-top-height:             @ag-top-main-height + @ag-top-menu-height + @ag-top-panel-height;

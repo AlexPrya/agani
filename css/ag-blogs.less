@@ -1,0 +1,106 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-blogs {
+        margin: 30px 0 0;
+        .clearfix();
+
+        &-item {
+            border: 1px solid @border-gray-medium;
+            padding: 3px;
+            .border-radius(3px);
+
+            &:hover {
+                .ag-blogs-item__main-img {
+                    opacity: 1;
+                }
+            }
+
+            &__head {
+                margin: 43px 0 15px;
+                .clearfix();
+            }
+
+            &__main-img {;
+                margin: -43px 0 0;
+                opacity: 0.5;
+                float: left;
+            }
+
+            &__avatar {
+                width: 86px;
+                height: 86px;
+                margin: -43px 10px 0 10px;
+                padding: 2px;
+                background-color: @body-bg;
+                opacity: 1;
+                position: relative;
+                float: left;
+            }
+
+            &__body {
+                padding: 10px;
+            }
+
+            &__name {
+                font-weight: bold;
+                margin: 0 0 15px;
+            }
+
+            &__preview {
+                margin: 0 0 10px;
+            }
+
+            &__bottom {
+                font-size: 12px;
+                padding: 0 10px;
+                .clearfix();
+
+                .like,
+                .posts {
+                    float: right;
+                    padding: 0 0 0 15px;
+                    margin: 0 0 0 15px;
+                }
+
+                .like {
+
+                    &.active {
+
+                    }
+                }
+
+                .posts {
+
+                    &.active {
+
+                    }
+                }
+            }
+
+            &__date {
+                float: left;
+                margin: 0;
+            }
+
+            &__link {
+                color: @text-color;
+                cursor: pointer;
+
+                &:hover,
+                &:active {
+                    color: @text-color;
+                    text-decoration: none;
+                }
+            }
+
+            &__block {
+                padding: 15px;
+            }
+        }
+    }
+
+
+}

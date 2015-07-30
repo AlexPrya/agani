@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-lk-menu {
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+}
+.ag-lk-menu__item {
+  list-style: none;
+  border-radius: 2px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+}
+.ag-lk-menu__item:last-of-type {
+  border: none;
+}
+.ag-lk-menu__item.active {
+  background-color: #49ccf0;
+  border: none;
+}
+.ag-lk-menu__item.active .ag-lk-menu__item-link {
+  color: #ffffff;
+}
+.ag-lk-menu__item.active .ag-lk-menu__item-link:hover,
+.ag-lk-menu__item.active .ag-lk-menu__item-link:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ag-lk-menu__item-link {
+  padding: 15px 40px;
+  display: block;
+  margin: 0 auto;
+  color: #000000;
+}
+.ag-lk-menu__item-link:hover,
+.ag-lk-menu__item-link:active {
+  color: #000000;
+  text-decoration: none;
+}
+.ag-lk-menu__link {
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 11px 20px;
+  border: none;
+}
+.ag-lk-menu__link:hover,
+.ag-lk-menu__link:active {
+  background-color: #49ccf0;
+  color: #ffffff;
+  text-decoration: none   ;
+}
+.ag-lk-title {
+  border-bottom: 2px solid #97ca75;
+  font-weight: normal;
+  padding: 10px 15px;
+}
+.ag-lk-title span {
+  font-weight: bold;
+}
+.ag-lk-info_block {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  margin: 20px 0;
+  border: 1px solid #dadada;
+  position: relative;
+  color: #000000;
+}
+.ag-lk-info_block:before,
+.ag-lk-info_block:after {
+  content: " ";
+  display: table;
+}
+.ag-lk-info_block:after {
+  clear: both;
+}
+.ag-lk-info_block.info:before {
+  width: 23px;
+  height: 23px;
+  background-position: -222px 0px;
+  margin-top: -12px;
+}
+.ag-lk-info_block:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  top: 50%;
+  left: 5%;
+}
+.ag-lk-info_block__text {
+  float: left;
+  width: 100%;
+  padding: 0 0 0 7% ;
+}
+.ag-lk-info_link {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  border: 1px solid #49ccf0;
+  position: relative;
+  color: #000000;
+}
+.ag-lk-info_link:before,
+.ag-lk-info_link:after {
+  content: " ";
+  display: table;
+}
+.ag-lk-info_link:after {
+  clear: both;
+}
+.ag-lk-info_link:hover,
+.ag-lk-info_link:active {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #f2a122;
+}
+.ag-lk-info_link__text {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  padding: 30px 0 30px 45px;
+  margin: 0 30px;
+}
+.ag-lk-info_link__text.info:before {
+  width: 23px;
+  height: 23px;
+  background-position: -222px 0px;
+  margin-top: -12px;
+}
+.ag-lk-info_link__text.pro:before {
+  width: 33px;
+  height: 14px;
+  background-position: -157px -24px;
+  margin-top: -7px;
+  left: 0;
+}
+.ag-lk-info_link__text.prfl:before {
+  width: 24px;
+  height: 25px;
+  background-position: -62px 0px;
+  margin-top: -13px;
+  left: 0;
+}
+.ag-lk-info_link__text.bskt:before {
+  width: 30px;
+  height: 25px;
+  background-position: -86px 0px;
+  margin-top: -13px;
+  left: 0;
+}
+.ag-lk-info_link__text.pnsl:before {
+  width: 24px;
+  height: 24px;
+  background-position: -177px 0px;
+  margin-top: -12px;
+  left: 0;
+}
+.ag-lk-info_link__text.pn:before {
+  width: 11px;
+  height: 24px;
+  background-position: -166px 0px;
+  margin-top: -12px;
+  left: 0;
+}
+.ag-lk-info_link__text.ml:before {
+  width: 25px;
+  height: 20px;
+  background-position: -266px 0px;
+  margin-top: -10px;
+  left: 0;
+}
+.ag-lk-info_link__text.rprt:before {
+  width: 26px;
+  height: 28px;
+  background-position: 0px 0px;
+  margin-top: -14px;
+  left: 0;
+}
+.ag-lk-info_link__text:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  top: 50%;
+}
+.ag-lk-info_link__text:hover,
+.ag-lk-info_link__text:active {
+  text-decoration: none;
+  color: #000000;
+}
+.ag-lk-form__group_name {
+  font-size: 22px;
+  margin: 30px 0;
+}
+.ag-lk-form__group_name:before,
+.ag-lk-form__group_name:after {
+  content: " ";
+  display: table;
+}
+.ag-lk-form__group_name:after {
+  clear: both;
+}
+.ag-lk-form-field {
+  margin: 20px 0;
+}
+.ag-lk-form-field:before,
+.ag-lk-form-field:after {
+  content: " ";
+  display: table;
+}
+.ag-lk-form-field:after {
+  clear: both;
+}
+.ag-lk-form-field__submit {
+  text-align: right;
+}
+.ag-lk-form-field__submit input {
+  text-align: center;
+}
+.ag-lk-form-field__name {
+  font-weight: normal;
+  font-size: 16px;
+  position: relative;
+}
+.ag-lk-form-field__name a {
+  color: #000000;
+  text-decoration: underline;
+}
+.ag-lk-form-field__name a:hover,
+.ag-lk-form-field__name a:active {
+  color: #000000;
+  text-decoration: none;
+}
+.ag-lk-form-field__checkbox-field {
+  margin: 6px 0;
+}
+.ag-lk-form-field__inp.alt {
+  padding: 6px 12px 46px;
+  height: 76px;
+  background-color: #ffffff !important;
+}
+.ag-lk-form-field__inp.horisontal {
+  height: 32px;
+}
+.ag-lk-form-field__plus {
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  margin: 0 -12px 0 0;
+  width: 23px;
+  height: 21px;
+  border: none;
+  background: none;
+  outline: none !important;
+}
+.ag-lk-form-field__plus:before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/sprite.png');
+  background-position: -259px 0px;
+  top: 0;
+  right: 0;
+  outline: none !important;
+}
+.ag-lk-form-field__plus-block {
+  position: relative;
+}
+.ag-lk-form-field__plus-block.inline .ag-lk-form-field__inp {
+  float: left;
+  width: 90%;
+}
+.ag-lk-form-field__plus-block.inline .ag-lk-form-field__plus {
+  float: right;
+  width: 10%;
+  position: relative;
+  bottom: -5px;
+  right: 0;
+  margin: 0;
+}
+.ag-lk-form-field__plus-block.inline .ag-lk-form-field__plus:before {
+  margin: 0 auto;
+}
+@media (min-width: 1270px) {
+  .ag-lk-info_link {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1270px) {
+  .ag-lk-info_link {
+    font-size: 17px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ag-lk-info_link {
+    font-size: 15px;
+    height: 110px;
+  }
+  .ag-lk-form-field__name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .ag-lk-menu__item {
+    display: none;
+  }
+  .ag-lk-menu__item.active {
+    display: block;
+    position: relative;
+  }
+  .ag-lk-menu__item.active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 7px;
+    height: 4px;
+    background-image: url('../img/sprite.png');
+    background-position: 0px -26px;
+  }
+  .ag-lk-form-field__name {
+    font-size: 14px;
+  }
+  .ag-lk-form-field__submit {
+    text-align: center;
+  }
+  .ag-lk-info_link {
+    font-size: 17px;
+  }
+}

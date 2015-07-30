@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-blogs {
+  margin: 30px 0 0;
+}
+.ag-blogs:before,
+.ag-blogs:after {
+  content: " ";
+  display: table;
+}
+.ag-blogs:after {
+  clear: both;
+}
+.ag-blogs-item {
+  border: 1px solid #dadada;
+  padding: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.ag-blogs-item:hover .ag-blogs-item__main-img {
+  opacity: 1;
+}
+.ag-blogs-item__head {
+  margin: 43px 0 15px;
+}
+.ag-blogs-item__head:before,
+.ag-blogs-item__head:after {
+  content: " ";
+  display: table;
+}
+.ag-blogs-item__head:after {
+  clear: both;
+}
+.ag-blogs-item__main-img {
+  margin: -43px 0 0;
+  opacity: 0.5;
+  float: left;
+}
+.ag-blogs-item__avatar {
+  width: 86px;
+  height: 86px;
+  margin: -43px 10px 0 10px;
+  padding: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+  position: relative;
+  float: left;
+}
+.ag-blogs-item__body {
+  padding: 10px;
+}
+.ag-blogs-item__name {
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+.ag-blogs-item__preview {
+  margin: 0 0 10px;
+}
+.ag-blogs-item__bottom {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.ag-blogs-item__bottom:before,
+.ag-blogs-item__bottom:after {
+  content: " ";
+  display: table;
+}
+.ag-blogs-item__bottom:after {
+  clear: both;
+}
+.ag-blogs-item__bottom .like,
+.ag-blogs-item__bottom .posts {
+  float: right;
+  padding: 0 0 0 15px;
+  margin: 0 0 0 15px;
+}
+.ag-blogs-item__date {
+  float: left;
+  margin: 0;
+}
+.ag-blogs-item__link {
+  color: #000000;
+  cursor: pointer;
+}
+.ag-blogs-item__link:hover,
+.ag-blogs-item__link:active {
+  color: #000000;
+  text-decoration: none;
+}
+.ag-blogs-item__block {
+  padding: 15px;
+}

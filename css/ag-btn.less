@@ -1,0 +1,124 @@
+//
+// control classes
+// --------------------------------------------------
+
+// Core variables and mixins
+@import "variables";
+@import 'elements';
+
+.ag-btn {
+
+	position: relative;
+	display: inline-block;
+	width: auto;
+	text-decoration: none!important;
+	color: @btn-text-color;
+	border-radius: 2px;
+	cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+        color: @btn-text-color;
+    }
+
+
+//	&[disabled],
+//	&.disabled {
+//		background: @btn-bg-disabled !important;
+//		color: @btn-text-disabled !important;
+//	}
+
+
+
+	&-link {
+		padding: 9px 0;
+		color: @link-color;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+			color: @link-color;
+		}
+	}
+
+
+	//
+	// size
+	//
+	&-big {
+		min-width: 100px;
+		padding: 10px 20px;
+	}
+	&-medium {
+		padding: 7px 10px;
+	}
+	&-small {
+
+	}
+
+    &-long {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-s_long {
+        padding: 0 50px;
+        font-size: 28px;
+    }
+
+    &-table {
+        min-width: 85px;
+    }
+
+
+	//
+	// color
+	//
+
+	// blue
+	&-first {
+        .btn-color(@brand-color-first);
+	}
+	// orange
+	&-second {
+        .btn-color(@brand-color-second);
+	}
+	// red
+	&-cancel {
+        .btn-color(@btn-cancel);
+	}
+    // green
+    &-success {
+        .btn-color(@success-color);
+    }
+    // gray
+    &-disabled {
+        background: @btn-bg-disabled;
+    }
+
+
+
+
+	&__icon {
+		margin: -3px 5px;
+		border: 2px solid #fff;
+        border-radius: 12px;
+        background: @brand-color-second;
+        color: @btn-text-color;
+        padding: 0 5px;
+        text-align: center;
+        display: inline-block;
+        cursor: default;
+	}
+
+	&__text {
+
+	}
+
+	&__text&-dotted {
+		border-bottom: 1px dotted;
+	}
+}

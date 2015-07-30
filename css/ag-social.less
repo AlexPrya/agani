@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-social {
+
+        &.footer {
+            .ag-social {
+
+                &__item {
+                    float: left;
+                    padding: 10px;
+                    height: 36px;
+
+                    &:hover,
+                    &:active {
+
+                        .vk {
+                            background-position: -492px -50px;
+                        }
+                        .google {
+                            background-position: -307px -45px;
+                        }
+                        .fb {
+                            background-position: -504px -18px;
+                        }
+                        .ok {
+                            background-position: -297px -45px;
+                        }
+                    }
+                }
+
+                &__icon {
+
+                    &.vk {
+                        width: 16px;
+                        height: 10px;
+                        background-position: -184px -50px;
+
+                        &:hover,
+                        &active {
+                            background-position: -492px -50px;
+                        }
+                    }
+                    &.google {
+                        width: 16px;
+                        height: 16px;
+                        background-position: -343px -44px;
+
+                        &:hover,
+                        &active {
+                            background-position: -307px -45px;
+                        }
+                    }
+                    &.fb {
+                        width: 8px;
+                        height: 14px;
+                        background-position: -508px -0px;
+
+                        &:hover,
+                        &active {
+                            background-position: -504px -18px;
+                        }
+                    }
+                    &.ok {
+                        width: 10px;
+                        height: 16px;
+                        background-position: -369px -44px;
+
+                        &:hover,
+                        &active {
+                            background-position: -297px -45px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__item {
+            display: block;
+            float: right;
+            text-decoration: none;
+            padding: 15px;
+            height: 46px;
+
+            &.alt {
+
+                &:hover,
+                &:active {
+                    background-color: @social-second-color;
+                    color: @btn-text-color;
+                    text-decoration: none;
+                }
+            }
+
+            &:hover,
+            &:active {
+                background-color: @social-first-color;
+                color: @btn-text-color;
+                text-decoration: none;
+
+                .vk {
+                    background-position: -492px -50px;
+                }
+                .google {
+                    background-position: -307px -45px;
+                }
+                .fb {
+                    background-position: -504px -18px;
+                }
+                .ok {
+                    background-position: -297px -45px;
+                }
+            }
+        }
+
+        &__icon {
+            display: block;
+            background-image: url('@{path-sprite}');
+            margin: 0 auto;
+
+            &.vk {
+                width: 16px;
+                height: 10px;
+//                margin: 3px 0 0 -4px;
+                background-position: -184px -50px;
+
+                &:hover,
+                &active {
+                    background-position: -492px -50px;
+                }
+            }
+            &.google {
+                width: 16px;
+                height: 16px;
+                background-position: -343px -44px;
+
+                &:hover,
+                &active {
+                    background-position: -307px -45px;
+                }
+            }
+            &.fb {
+                width: 8px;
+                height: 14px;
+                background-position: -508px -0px;
+
+                &:hover,
+                &active {
+                    background-position: -504px -18px;
+                }
+            }
+            &.ok {
+                width: 10px;
+                height: 16px;
+                background-position: -369px -44px;
+
+                &:hover,
+                &active {
+                    background-position: -297px -45px;
+                }
+            }
+        }
+    }
+}

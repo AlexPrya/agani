@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-regular.eot');
+  src: url('../fonts/firasans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular.woff2') format('woff2'), url('../fonts/firasans-regular.woff') format('woff'), url('../fonts/firasans-regular.ttf') format('truetype'), url('../fonts/firasans-regular.svg#Fira Sans Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-bold.eot');
+  src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold.woff2') format('woff2'), url('../fonts/firasans-bold.woff') format('woff'), url('../fonts/firasans-bold.ttf') format('truetype'), url('../fonts/firasans-bold.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/firasans-medium.eot');
+  src: url('../fonts/firasans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium.woff2') format('woff2'), url('../fonts/firasans-medium.woff') format('woff'), url('../fonts/firasans-medium.ttf') format('truetype'), url('../fonts/firasans-medium.svg#Fira Sans Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.ag-social.footer .ag-social__item {
+  float: left;
+  padding: 10px;
+  height: 36px;
+}
+.ag-social.footer .ag-social__item:hover .vk,
+.ag-social.footer .ag-social__item:active .vk {
+  background-position: -492px -50px;
+}
+.ag-social.footer .ag-social__item:hover .google,
+.ag-social.footer .ag-social__item:active .google {
+  background-position: -307px -45px;
+}
+.ag-social.footer .ag-social__item:hover .fb,
+.ag-social.footer .ag-social__item:active .fb {
+  background-position: -504px -18px;
+}
+.ag-social.footer .ag-social__item:hover .ok,
+.ag-social.footer .ag-social__item:active .ok {
+  background-position: -297px -45px;
+}
+.ag-social.footer .ag-social__icon.vk {
+  width: 16px;
+  height: 10px;
+  background-position: -184px -50px;
+}
+.ag-social.footer .ag-social__icon.vk:hover,
+.ag-social.footer .ag-social__icon.vkactive {
+  background-position: -492px -50px;
+}
+.ag-social.footer .ag-social__icon.google {
+  width: 16px;
+  height: 16px;
+  background-position: -343px -44px;
+}
+.ag-social.footer .ag-social__icon.google:hover,
+.ag-social.footer .ag-social__icon.googleactive {
+  background-position: -307px -45px;
+}
+.ag-social.footer .ag-social__icon.fb {
+  width: 8px;
+  height: 14px;
+  background-position: -508px 0px;
+}
+.ag-social.footer .ag-social__icon.fb:hover,
+.ag-social.footer .ag-social__icon.fbactive {
+  background-position: -504px -18px;
+}
+.ag-social.footer .ag-social__icon.ok {
+  width: 10px;
+  height: 16px;
+  background-position: -369px -44px;
+}
+.ag-social.footer .ag-social__icon.ok:hover,
+.ag-social.footer .ag-social__icon.okactive {
+  background-position: -297px -45px;
+}
+.ag-social__item {
+  display: block;
+  float: right;
+  text-decoration: none;
+  padding: 15px;
+  height: 46px;
+}
+.ag-social__item.alt:hover,
+.ag-social__item.alt:active {
+  background-color: #e78174;
+  color: #ffffff;
+  text-decoration: none;
+}
+.ag-social__item:hover,
+.ag-social__item:active {
+  background-color: #758ab7;
+  color: #ffffff;
+  text-decoration: none;
+}
+.ag-social__item:hover .vk,
+.ag-social__item:active .vk {
+  background-position: -492px -50px;
+}
+.ag-social__item:hover .google,
+.ag-social__item:active .google {
+  background-position: -307px -45px;
+}
+.ag-social__item:hover .fb,
+.ag-social__item:active .fb {
+  background-position: -504px -18px;
+}
+.ag-social__item:hover .ok,
+.ag-social__item:active .ok {
+  background-position: -297px -45px;
+}
+.ag-social__icon {
+  display: block;
+  background-image: url('../img/sprite.png');
+  margin: 0 auto;
+}
+.ag-social__icon.vk {
+  width: 16px;
+  height: 10px;
+  background-position: -184px -50px;
+}
+.ag-social__icon.vk:hover,
+.ag-social__icon.vkactive {
+  background-position: -492px -50px;
+}
+.ag-social__icon.google {
+  width: 16px;
+  height: 16px;
+  background-position: -343px -44px;
+}
+.ag-social__icon.google:hover,
+.ag-social__icon.googleactive {
+  background-position: -307px -45px;
+}
+.ag-social__icon.fb {
+  width: 8px;
+  height: 14px;
+  background-position: -508px 0px;
+}
+.ag-social__icon.fb:hover,
+.ag-social__icon.fbactive {
+  background-position: -504px -18px;
+}
+.ag-social__icon.ok {
+  width: 10px;
+  height: 16px;
+  background-position: -369px -44px;
+}
+.ag-social__icon.ok:hover,
+.ag-social__icon.okactive {
+  background-position: -297px -45px;
+}

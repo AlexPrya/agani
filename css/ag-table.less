@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'elements';
+
+.ag {
+
+    &-table {
+        width: 100%;
+        margin: 30px 0;
+
+        &-select {
+            position: relative;
+
+            &__item {
+                color: @text-color;
+                text-decoration: none;
+                padding: 5px 15px !important;
+            }
+
+            &__delete {
+                position: absolute;
+                top: 11px;
+                right: 0;
+                color: @text-color;
+
+                &:hover,
+                &:active {
+                    color: @text-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &.active {
+            display: table !important;
+        }
+
+        &.lk {
+
+            .ag-table {
+
+                &-col {
+                    padding: 0 5px;
+                }
+
+                &-row {
+                    height: 95px;
+
+                    &:nth-of-type(even) {
+                        background-color: @body-fg;
+                    }
+                }
+            }
+        }
+
+        &-row {
+            line-height: 46px;
+        }
+
+        &-col {
+
+            &__icon {
+                float: right;
+                margin: 0 10px 0 0;
+
+                &.check {
+                    margin: -10px 0 -10px 0;
+                }
+            }
+        }
+    }
+
+
+}
