@@ -5,5 +5,112 @@
 
     &-search {
 
+        &__prompt {
+            margin: 0 10px 0 0;
+        }
+
+        .form-control {
+            width: 180px !important;
+            margin: 0 10px 0 0;
+        }
+
+        &__btn {
+            width: 150px;
+            text-align: center;
+            margin: 0 10px 0 0;
+            text-transform: uppercase;
+
+            &+ label {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    left: -140px;
+                    width: 21px;
+                    height: 22px;
+                    background-position: -305px -0px;
+                    background-image: url('@{path-sprite}');
+                }
+            }
+        }
+
+        &__full-btn {
+            display: inline-block;
+            width: 100px;
+            float: right;
+            margin: -34px 0 0 0;
+            cursor: pointer;
+            color: @text-color;
+
+            &:hover,
+            &:active,
+            &:visited {
+                color: @text-color;
+            }
+        }
+
+        &-full {
+            background-color: @body-fg-sec;
+            padding: 15px 0;
+
+            &__field {
+                margin: 15px 0;
+            }
+
+            input[type=checkbox] + label {
+                line-height: 34px;
+            }
+
+            .price-control {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 2px;
+                    top: 50%;
+                    right: -5px;
+                    background-color: @border-gray-medium;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .ag-search {
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .ag-search {
+
+        .form-control {
+            width: 135px !important;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .ag-search {
+
+        .form-control {
+            width: 135px !important;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ag-search {
+
     }
 }

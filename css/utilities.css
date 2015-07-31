@@ -43,16 +43,16 @@
 .ag-icon.info {
   width: 17px;
   height: 18px;
-  background-position: -467px 0px;
+  background-position: -408px -42px;
 }
 .ag-icon.info_l {
   width: 22px;
   height: 22px;
-  background-position: -391px -22px;
+  background-position: -396px 0px;
 }
 .ag-icon.info_l:hover,
 .ag-icon.info_lactive {
-  background-position: -347px -22px;
+  background-position: -352px 0px;
 }
 .ag-icon.mail1 {
   width: 22px;
@@ -86,16 +86,10 @@
   font-size: 40px;
 }
 .banner {
-  width: 100%;
-  height: 400px;
-  margin: 60px 0 0;
-  background-color: #f7f7f7;
+  margin: 60px auto 0;
 }
-.banner_c {
-  width: 960px;
-  height: 110px;
-  background-color: #f7f7f7;
-  margin: 30px auto;
+.banner img {
+  margin: 0 auto;
 }
 .half {
   width: 50%;
@@ -106,6 +100,18 @@
 }
 .text-small {
   font-size: 14px;
+}
+.text-orange {
+  color: #f2a122;
+}
+.hiddden {
+  display: none;
+}
+#blackout {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.1;
+  display: none;
 }
 .required:before {
   content: '*';
@@ -126,7 +132,7 @@
   left: 15px;
   width: 24px;
   height: 25px;
-  background-position: -12px 0px;
+  background-position: -132px 0px;
   background-image: url('../img/sprite.png');
 }
 .gray-box {
@@ -173,6 +179,12 @@
   .sm_r {
     text-align: right;
   }
+  .banner {
+    margin: 0 auto 20px;
+  }
+  .banner img {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .title-big {
@@ -186,6 +198,12 @@
   }
   .sm_r {
     text-align: right;
+  }
+  .banner {
+    margin: 0 auto 20px;
+  }
+  .banner img {
+    margin: 0 auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1270px) {

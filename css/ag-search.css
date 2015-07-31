@@ -25,3 +25,79 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+.ag-search__prompt {
+  margin: 0 10px 0 0;
+}
+.ag-search .form-control {
+  width: 180px !important;
+  margin: 0 10px 0 0;
+}
+.ag-search__btn {
+  width: 150px;
+  text-align: center;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
+}
+.ag-search__btn + label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ag-search__btn + label:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -140px;
+  width: 21px;
+  height: 22px;
+  background-position: -305px 0px;
+  background-image: url('../img/sprite.png');
+}
+.ag-search__full-btn {
+  display: inline-block;
+  width: 100px;
+  float: right;
+  margin: -34px 0 0 0;
+  cursor: pointer;
+  color: #000000;
+}
+.ag-search__full-btn:hover,
+.ag-search__full-btn:active,
+.ag-search__full-btn:visited {
+  color: #000000;
+}
+.ag-search-full {
+  background-color: #fcfcfc;
+  padding: 15px 0;
+}
+.ag-search-full__field {
+  margin: 15px 0;
+}
+.ag-search-full input[type=checkbox] + label {
+  line-height: 34px;
+}
+.ag-search-full .price-control {
+  position: relative;
+}
+.ag-search-full .price-control:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  right: -5px;
+  background-color: #dadada;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .ag-search .form-control {
+    width: 135px !important;
+    margin: 0 10px 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ag-search .form-control {
+    width: 135px !important;
+    margin: 0 10px 0 0;
+  }
+}

@@ -4,14 +4,17 @@
         <title>Заголовок</title>
         <link rel="stylesheet" type="text/css" href="img/sprite.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/owl/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/owl/owl.theme.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/owl/owl.transitions.css" />
 		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap-theme.css" />
         <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="plugins/bootstrap/bootstrap.js"></script>
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="plugins/bootstrap/bootstrap.js"></script>
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
         <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
     </head>
@@ -66,7 +69,7 @@
                         </div>
                     </div>
                     <div class="hidden-xs col-sm-4 col-md-5 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 ag-header-banner row">
-                        <div class="row ag-header-banner__block">
+                        <div class="row ag-header-  banner__block">
                             <div class="col-md-7 col-sm-12 ag-header-banner__text">
                                 Помогите сайту стать лучше -</br> делитесь вашими идеями!
                             </div>
@@ -81,13 +84,15 @@
         <div class="ag-header-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-7 col-md-8 ">
+                    <div class="col-xs-7 col-sm-9 col-md-9 col-lg-10">
                         <ul class="hidden-sm hidden-md hidden-lg ag-header-menu row">
                             <li class="col-xs-4 ag-header-menu__item">
                                 <a class="ag-header-menu__link gamburger" href="#"></a>
                             </li>
                             <li class="col-xs-8 ag-header-menu__item h_search">
-                                <input class="ag-header-menu__link h_search" type="text"/>
+                                <div class="row">
+                                    <input class="ag-header-menu__link h_search col-xs-12" type="text"/>
+                                </div>
                             </li>
                         </ul>
                         <ul class="hidden-xs ag-header-menu">
@@ -108,20 +113,22 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xs-5 col-md-4">
-                        <div class="ag-social">
-                            <a href="#" class="ag-social__item">
-                                <span class="ag-social__icon vk"></span>
-                            </a>
-                            <a href="#" class="ag-social__item alt"
-                                    ><span class="ag-social__icon google"></span>
-                            </a>
-                            <a href="#" class="ag-social__item"
-                                    ><span class="ag-social__icon fb"></span>
-                            </a>
-                            <a href="#" class="ag-social__item">
-                                <span class="ag-social__icon ok"></span>
-                            </a>
+                    <div class="col-xs-5 col-sm-3 col-md-3 col-lg-2">
+                        <div class="ag-social row">
+                            <div class="col-xs-12">
+                                <a href="#" class="ag-social__item col-xs-3 col-sm-3">
+                                    <span class="ag-social__icon vk"></span>
+                                </a>
+                                <a href="#" class="ag-social__item col-xs-3 col-sm-3 alt"
+                                        ><span class="ag-social__icon google"></span>
+                                </a>
+                                <a href="#" class="ag-social__item col-xs-3 col-sm-3"
+                                        ><span class="ag-social__icon fb"></span>
+                                </a>
+                                <a href="#" class="ag-social__item col-xs-3 col-sm-3">
+                                    <span class="ag-social__icon ok"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <ul class="hidden-xs hidden-sm hidden-md hidden-lg row ag-header-menu">
@@ -147,70 +154,115 @@
     </header>
     <content>
         <div class="ag-slider">
-            <div class="ag-slider-item">
-                <div class="ag-slider-item__bg" style="background-image: url('img/slide1.jpg')">
-                    <div class="container">
+            <div class="ag-slider-item owl-carousel" id="main_slider">
+                <div>
+                    <div class="ag-slider-item__info">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-7 col-xs-6">
+                                    <div class="ag-slider-item__descr">
+                                        <p>Более 10000 частных объявлений</p>
+                                        <p>о покупе и продаже
+                                            сельскохозяйственных животных и
+                                            продуктов</p>
+                                        <a href="#" class="ag-slider-item__descr-big">Разместить объявление</a>
+                                        <div class="hidden-xs">
+                                            <a class="ag-btn ag-btn-big ag-btn-second ag-btn-second ag-slider-item__descr-btn " href="#">Купить</a>
+                                            <a class="ag-btn ag-btn-big ag-btn-second ag-btn-second ag-slider-item__descr-btn " href="#">Продать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-responsive ag-slider-item__img" src="img/slide1.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="hidden-xs ag-content-field ag-content-block">
+            <div class="container">
+                <form class="ag-search form-inline" id="main-search_form" name="search" action="#">
+                    <span class="hidden-xs hidden-sm ag-text-big ag-search__prompt">Я хочу</span>
+                    <select class="form-control">
+                        <option value="1">Купить</option>
+                        <option value="2">Продать</option>
+                    </select>
+                    <select class="form-control" placeholder="123">
+                        <option value="1">Купить</option>
+                        <option value="2">Продать</option>
+                    </select>
+                    <select class="form-control" placeholder="123">
+                        <option value="1">Купить</option>
+                        <option value="2">Продать</option>
+                    </select>
+                    <select class="hidden-xs hidden-sm form-control" placeholder="123">
+                        <option value="1">Купить</option>
+                        <option value="2">Продать</option>
+                    </select>
+                    <input class="ag-btn ag-btn-success ag-btn-medium ag-search__btn" id="main_search" value="ПОИСК"><label for="main_search"></label>
+                </form>
+                <a href="#" id="full-search-btn" class="ag-text-medium ag-search__full-btn">
+                    Расширенный поиск
+                </a>
+            </div>
+        </div>
+        <div class="hidden-xs ag-search-full hiddden" id="full-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12">
                         <div class="row">
-                            <div class="ag-slider-item__info col-md-6">
-                                <div class="ag-slider-item__descr">
-                                    <p>Более 10000 частных объявлений</p><br>
-                                    <p>о покупе и продаже
-                                        сельскохозяйственных животных и
-                                        продуктов</p>
-                                    <p class="title-big">Разместить объявление</p>
-                                    <div>
-                                        <a class="ag-btn ag-btn-big ag-btn-second ag-btn-s_long" href="#">Купить</a>
-                                        <a class="ag-btn ag-btn-big ag-btn-second ag-btn-s_long" href="#">Продать</a>
+                            <div class="col-lg-4  col-md-4 col-sm-4 ag-search-full__field">
+                                <select form="main-search_form" class="form-control">
+                                    <option disabled selected value="">Производительность</option>
+                                    <option value="1">Купить</option>
+                                    <option value="2">Продать</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4  col-md-4 col-sm-4 ag-search-full__field">
+                                <select form="main-search_form" class="form-control">
+                                    <option disabled selected value="">Порода</option>
+                                    <option value="1">Купить</option>
+                                    <option value="2">Продать</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4  col-md-4 col-sm-4 ag-search-full__field">
+                                <select form="main-search_form" class="form-control">
+                                    <option disabled selected value="">Пол и возраст</option>
+                                    <option value="1">купить</option>
+                                    <option value="2">Продать</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 ag-search-full__field price-control">
+                                        <input form="main-search_form" class="form-control" placeholder="цена от" type="text"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 ag-search-full__field">
+                                        <input form="main-search_form" class="form-control" placeholder="цена до" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4  col-md-4 col-sm-4 ag-search-full__field">
+                                <select form="main-search_form" class="form-control">
+                                    <option disabled selected value="">Купить</option>
+                                    <option value="22">Продать</option>
+                                    <option value="2">Продать</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 ag-search-full__field">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input form="main-search_form" id="with_photo" type="checkbox"/><label for="with_photo">только с фото</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input form="main-search_form" id="only_pro" type="checkbox"/><label for="only_pro">только <span class="text-orange">PRO</span></label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-        <div class="hidden-xs ag-content-field ag-content-block">
-            <div class="container ag-search">
-                <form class="ag-search" name="search" action="#">
-                    <div class="col-md-1 hidden-xs hidden-sm">
-                        <span class="ag-text-big">Я хочу</span>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-lg-2">
-                        <select class="form-control">
-                            <option value="1">Купить</option>
-                            <option value="2">Продать</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-lg-2">
-                        <select class="form-control" placeholder="123">
-                            <option value="1">Купить</option>
-                            <option value="2">Продать</option>
-                        </select>   
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-lg-2">
-                        <select class="form-control">
-                            <option value="1">Купить</option>
-                            <option value="2">Продать</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2 hidden-xs hidden-sm col-lg-2">
-                        <select class="form-control">
-                            <option value="1">Купить</option>
-                            <option value="2">Продать</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 col-md-3 row">
-                        <div class="col-sm-8 col-lg-6 col-md-6">
-                            <a class="ag-btn ag-btn-success ag-btn-medium ag-search-btn">ПОИСК</a>
-                        </div>
-                        <div class="col-sm-4 col-lg-6 col-md-6">
-                            <a class="ag-text-medium">
-                                Расширенный поиск
-                            </a>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
         <div class="container">
@@ -223,19 +275,33 @@
 
                     </a>
                     <ul class="ag-content-block__menu">
-                        <li class="ag-content-block__item active">Популярные</li>
-                        <li class="ag-content-block__item">Птица</li>
-                        <li class="ag-content-block__item">Продукты</li>
-                        <li class="ag-content-block__item">Рыба</li>
-                        <li class="ag-content-block__item">Пушные звери</li>
-                        <li class="ag-content-block__item">Прочие животные</li>
-                        <li class="ag-content-block__item">Товары и услуги</li>
-                        <li class="ag-content-block__item">Все</li>
+                        <li class="ag-content-block__item active">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#popular">Популярные</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#bird">Птица</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#">Продукты</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#">Рыба</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#">Пушные звери</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#">Прочие животные</a>
+                        </li>
+                        <li class="ag-content-block__item">
+                            <a class="ag-content-block__link" data-toggle="tab" href="#">Товары и услуги</a>
+                        </li>
+                        <li class="ag-content-block__item"><a class="ag-content-block__link" href="#">Все</a></li>
                     </ul>
                     <div class="line"></div>
                 </div>
-                <div class="ag-content-block__body">
-                    <div class="ag-cat">
+                <div class="ag-content-block__body tab-content">
+                    <div class="ag-cat tab-pane active" id="popular">
                         <a href="#" class="ag-cat-item">
                             <div class="ag-cat-item__info">
                                 <div class="ag-cat-item__title">
@@ -329,6 +395,74 @@
                         </div>
                     </a>
                     </div>
+                    <div class="ag-cat tab-pane" id="bird">
+                        <a href="#" class="ag-cat-item">
+                        <div class="ag-cat-item__info">
+                            <div class="ag-cat-item__title">
+                                Овцы
+                            </div>
+                            <div class="ag-cat-item__type">
+                                <span>Покупка (10)</span>
+                                <span>Продажа (10)</span>
+                            </div>
+                        </div>
+                        <div class="ag-cat-item__img">
+                            <img class="img-responsive" src="img/p.jpg" alt=""/>
+                        </div>
+                    </a><a href="#" class="ag-cat-item">
+                        <div class="ag-cat-item__info">
+                            <div class="ag-cat-item__title">
+                                Овцы
+                            </div>
+                            <div class="ag-cat-item__type">
+                                <span>Покупка (10)</span>
+                                <span>Продажа (10)</span>
+                            </div>
+                        </div>
+                        <div class="ag-cat-item__img">
+                            <img class="img-responsive" src="img/p.jpg" alt=""/>
+                        </div>
+                    </a><a href="#" class="ag-cat-item">
+                        <div class="ag-cat-item__info">
+                            <div class="ag-cat-item__title">
+                                Овцы
+                            </div>
+                            <div class="ag-cat-item__type">
+                                <span>Покупка (10)</span>
+                                <span>Продажа (10)</span>
+                            </div>
+                        </div>
+                        <div class="ag-cat-item__img">
+                            <img class="img-responsive" src="img/p.jpg" alt=""/>
+                        </div>
+                    </a><a href="#" class="ag-cat-item">
+                        <div class="ag-cat-item__info">
+                            <div class="ag-cat-item__title">
+                                Овцы
+                            </div>
+                            <div class="ag-cat-item__type">
+                                <span>Покупка (10)</span>
+                                <span>Продажа (10)</span>
+                            </div>
+                        </div>
+                        <div class="ag-cat-item__img">
+                            <img class="img-responsive" src="img/p.jpg" alt=""/>
+                        </div>
+                    </a><a href="#" class="ag-cat-item">
+                        <div class="ag-cat-item__info">
+                            <div class="ag-cat-item__title">
+                                Овцы
+                            </div>
+                            <div class="ag-cat-item__type">
+                                <span>Покупка (10)</span>
+                                <span>Продажа (10)</span>
+                            </div>
+                        </div>
+                        <div class="ag-cat-item__img">
+                            <img class="img-responsive" src="img/p.jpg" alt=""/>
+                        </div>
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -339,36 +473,63 @@
                         <div class="ag-content-block__title icon_star">
                             Рекомендуемые объявления
                         </div>
-                        <ul class="ag-content-block__menu">
+                        <ul class="ag-content-block__name">
                             <li class="ag-content-block__item active">Добавить объявление</li>
                         </ul>
                         <div class="line"></div>
                     </div>
                     <div class="ag-content-block__body">
-                        <div class="ag-ads-slider" id="ag-ads-slider">
+                        <div class="ag-ads-slider owl-carousel" id="ag-ads-slider">
                             <div class="ag-ads-slider-item">
                                 <div class="ag-ads-slider-item__img-block">
-                                    <img class="ag-ads-slider-item__img img-responsive" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
-                                    <span class="icon search_g ag-ads-slider-item__iconbg"></span>
+                                    <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952.jpg" alt=""/>
+                                    <a class="ag-ads-slider-item__iconbg"></a>
                                 </div>
                                 <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
                                 <p class="ag-ads-slider-item__price">50 000 рублей</p>
                                 <p class="ag-ads-slider-item__address">г. Москва</p>
                             </div>
                             <div class="ag-ads-slider-item">
-                                <img class="ag-ads-slider-item__img img-responsive" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
+                                <div class="ag-ads-slider-item__img-block">
+                                    <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952.jpg" alt=""/>
+                                    <span class="ag-ads-slider-item__iconbg"></span>
+                                </div>
                                 <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
                                 <p class="ag-ads-slider-item__price">50 000 рублей</p>
                                 <p class="ag-ads-slider-item__address">г. Москва</p>
                             </div>
                             <div class="ag-ads-slider-item">
-                                <img class="ag-ads-slider-item__img img-responsive" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
+                                <div class="ag-ads-slider-item__img-block">
+                                    <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952.jpg" alt=""/>
+                                    <span class="ag-ads-slider-item__iconbg"></span>
+                                </div>
                                 <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
                                 <p class="ag-ads-slider-item__price">50 000 рублей</p>
                                 <p class="ag-ads-slider-item__address">г. Москва</p>
                             </div>
                             <div class="ag-ads-slider-item">
-                                <img class="ag-ads-slider-item__img img-responsive" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
+                                <div class="ag-ads-slider-item__img-block">
+                                    <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952.jpg" alt=""/>
+                                    <span class="ag-ads-slider-item__iconbg"></span>
+                                </div>
+                                <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
+                                <p class="ag-ads-slider-item__price">50 000 рублей</p>
+                                <p class="ag-ads-slider-item__address">г. Москва</p>
+                            </div>
+                            <div class="ag-ads-slider-item">
+                                <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
+                                <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
+                                <p class="ag-ads-slider-item__price">50 000 рублей</p>
+                                <p class="ag-ads-slider-item__address">г. Москва</p>
+                            </div>
+                            <div class="ag-ads-slider-item">
+                                <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
+                                <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
+                                <p class="ag-ads-slider-item__price">50 000 рублей</p>
+                                <p class="ag-ads-slider-item__address">г. Москва</p>
+                            </div>
+                            <div class="ag-ads-slider-item">
+                                <img class="ag-ads-slider-item__img" src="img/bulls-219952_small.jpg" data-src="img/bulls-219952_small.jpg" alt=""/>
                                 <a class="ag-ads-slider-item__name" href="#">Продажа кров</a>
                                 <p class="ag-ads-slider-item__price">50 000 рублей</p>
                                 <p class="ag-ads-slider-item__address">г. Москва</p>
@@ -378,18 +539,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("#ag-ads-slider").owlCarousel({
-
-                        items : 4,
-                        itemsDesktop : [1000,4], //При разрешении экрана от 901px до 1000px
-                        itemsDesktopSmall : [900,4], // При разрешении экрана от 601px до 900px
-                        itemsTablet: [600,1] //При разрешении экрана от 0 до 600px
-
-            });
-            });
-        </script>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 ag-content-block">
@@ -398,15 +547,437 @@
                             Частные объявления
                         </div>
                         <ul class="ag-content-block__menu">
-                            <li class="ag-content-block__item">Добавить</li>
-                            <li class="ag-content-block__item">Все</li>
-                            <li class="ag-content-block__item">Куплю</li>
-                            <li class="ag-content-block__item active">Продам</li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w1">Добавить</a>
+                            </li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w2">Все</a>
+                            </li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w3">Куплю</a>
+                            </li>
+                            <li class="ag-content-block__item active">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w4">Продам</a>
+                            </li>
                         </ul>
                         <div class="line"></div>
                     </div>
-                    <div class="ag-content-block__body">
-                        <table class="ag-table">
+                    <div class="ag-content-block__body tab-content">
+                        <table class="ag-table tab-pane" id="w1">
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="ag-table tab-pane" id="w2">
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="ag-table tab-pane" id="w3">
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="ag-table tab-pane active" id="w4">
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
+                            <tr class="ag-table-row">
+                                <td class="ag-table-col">
+                                    1.04.
+                                </td>
+                                <td class="ag-table-col">
+                                    Москва
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    Продам корову
+                                </td>
+                                <td class="ag-table-col" align="center">
+                                    30000 рублей
+                                </td>
+                                <td class="ag-table-col">
+                                    <span class="ag-icon info"></span>
+                                </td>
+                            </tr>
                             <tr class="ag-table-row">
                                 <td class="ag-table-col">
                                     1.04.
@@ -546,23 +1117,43 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="banner"></div>
+                <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                    <div class="banner">
+                        <img class="img-responsive" src="img/Banner_240.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                    <div class="banner">
+                        <img class="img-responsive" src="img/Banner_2401.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="hidden-sm col-xs-12 hidden-md hidden-lg">
+                    <div class="banner">
+                        <img class="img-responsive" src="img/Banner_2402.jpg" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-9 ag-content-block">
+                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-12 ag-content-block">
                     <div class="ag-content-block__head first">
                         <div class="ag-content-block__title">
                             Предложения профессионалов
                         </div>
                         <ul class="ag-content-block__menu">
-                            <li class="ag-content-block__item">Добавить</li>
-                            <li class="ag-content-block__item">Все</li>
-                            <li class="ag-content-block__item">Куплю</li>
-                            <li class="ag-content-block__item active">Продам</li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#">Добавить</a>
+                            </li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#">Все</a>
+                            </li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#">Куплю</a>
+                            </li>
+                            <li class="ag-content-block__item active">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#">Продам</a>
+                            </li>
                         </ul>
                         <div class="line"></div>
                     </div>
@@ -599,27 +1190,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 ag-content-block">
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 ag-content-block">
                     <div class="ag-content-block__head second">
                         <div class="ag-content-block__title">
-                            Новые PROфессионалы
+                            Новые PRO
                         </div>
                         <div class="line"></div>
                     </div>
-                    <div class="ag-content-block__body">
+                    <div class="ag-content-block__body row">
                         <div class="ag-tile new_pro">
-                            <div class="ag-tile-item">
-                                <a href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
+                            <div class="ag-tile-item col-xs-4 col-sm-12">
+                                <a class="ag-tile-item__img-cont" href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
                                 <a class="ag-tile-item__def_lnk" href="#"><p class="ag-tile-item__title">ООО "ППП"</p></a>
                                 <p class="ag-tile-item__address">Рязанская область</p>
                             </div>
-                            <div class="ag-tile-item">
-                                <a href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
+                            <div class="ag-tile-item col-xs-4 col-sm-12">
+                                <a class="ag-tile-item__img-cont" href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
                                 <a class="ag-tile-item__def_lnk" href="#"><p class="ag-tile-item__title">ООО "ППП"</p></a>
                                 <p class="ag-tile-item__address">Рязанская область</p>
                             </div>
-                            <div class="ag-tile-item">
-                                <a href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
+                            <div class="ag-tile-item col-xs-4 col-sm-12">
+                                <a class="ag-tile-item__img-cont" href="#"><img class="ag-tile-item__img img-circle" src="img/flower.jpg" alt=""/></a>
                                 <a class="ag-tile-item__def_lnk" href="#"><p class="ag-tile-item__title">ООО "ППП"</p></a>
                                 <p class="ag-tile-item__address">Рязанская область</p>
                             </div>
@@ -636,15 +1227,19 @@
                             Актуальные тендеры
                         </div>
                         <ul class="ag-content-block__menu">
-                            <li class="ag-content-block__item">Все текущие тендеры</li>
-                            <li class="ag-content-block__item active">Актуальные тендеры</li>
+                            <li class="ag-content-block__item">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w1">Все текущие тендеры</a>
+                            </li>
+                            <li class="ag-content-block__item active">
+                                <a class="ag-content-block__link" data-toggle="tab" href="#w1">Актуальные тендеры</a>
+                            </li>
                         </ul>
                         <div class="line"></div>
                     </div>
                     <div class="ag-content-block__body">
                         <div class="ag-tend">
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -659,7 +1254,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -674,7 +1269,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -689,7 +1284,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -704,7 +1299,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -719,7 +1314,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -734,7 +1329,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -749,7 +1344,7 @@
                                 </div>
                             </a>
                             <a class="ag-tend-item__link" href="#">
-                                <div class="ag-tend-item col-md-3">
+                                <div class="ag-tend-item col-md-3 col-lg-3 col-sm-4 col-xs-6">
                                     <div class="ag-tend-item__block">
                                         <div class="ag-tend-item__head">
                                             <p class="ag-tend-item__name">Закупка кроликов</p>
@@ -1066,5 +1661,6 @@
                 </div>
             </div>
 		</footer>
+        <div id="blackout"></div>
 	</body>
 </html>

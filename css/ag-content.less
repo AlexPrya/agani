@@ -60,15 +60,51 @@
                 margin: 0;
             }
 
+            &__name {
+
+                .ag-content-block__item {
+                    padding: 9px 10px;
+                }
+            }
+
             &__item {
                 font-size: 16px;
-                padding: 9px 10px;
                 list-style: none;
                 float: right;
                 cursor: pointer;
 
                 &.active {
                     color: @btn-text-color;
+                    text-decoration: none;
+
+                    .ag-content-block__link {
+                        color: @btn-text-color;
+                        text-decoration: none;
+
+                        &:hover,
+                        &:active {
+                            color: @btn-text-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.left {
+                    float: left;
+                }
+            }
+
+            &__link {
+                padding: 9px 10px;
+                color: @text-color;
+                text-decoration: none;
+                display: block;
+
+                &:hover,
+                &:active,
+                &:visited {
+                    color: @text-color;
+                    text-decoration: none;
                 }
             }
         }
@@ -101,15 +137,18 @@
 
                     &.active {
                         display: block;
-                        padding: 9px 20px 9px 10px;
                         position: relative;
+
+                        .ag-content-block__link {
+                            padding: 9px 20px 9px 10px;
+                        }
 
                         &:before {
                             content: '';
                             background-image: url("../img/sprite.png");
                             width: 7px;
                             height: 4px;
-                            background-position: -0px -26px;
+                            background-position: -140px -25px;
                             top: 18px;
                             right: 6px;
                             position: absolute;
@@ -143,15 +182,18 @@
 
                     &.active {
                         display: block;
-                        padding: 9px 20px 9px 10px;
                         position: relative;
+
+                        .ag-content-block__link {
+                            padding: 9px 20px 9px 10px;
+                        }
 
                         &:before {
                             content: '';
                             background-image: url("../img/sprite.png");
                             width: 7px;
                             height: 4px;
-                            background-position: -0px -26px;
+                            background-position: -140px -25px;
                             top: 18px;
                             right: 6px;
                             position: absolute;

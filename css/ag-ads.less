@@ -9,25 +9,70 @@
             margin: 30px 0 0;
             .clearfix();
 
+            .owl-item {
+                text-align: center;
+                padding: 0 15px;
+            }
+
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                right: -25px;
+                width: 14px;
+                height: 24px;
+                background-image: url("@{path-sprite}");
+                background-position: -529px -0px;
+            }
+
+            .owl-prev {
+                position: absolute;
+                top: 50%;
+                left: -25px;
+                width: 14px;
+                height: 24px;
+                background-image: url("@{path-sprite}");
+                background-position: -529px -24px;
+            }
+
             &-item {
                 display: inline-block;
                 position: relative;
-//                margin: 0 40px 0 0;
+                text-align: left;
 
                 &__img {
-                    opacity: 0.5;
+                    opacity: 1;
                     display: block;
                     position: relative;
+                    width: 100%;
+                    height: auto;
 
-                    &:hover {
-                        opacity: 1;
+                    &-block {
+                        position: relative;
+
+                        &:hover {
+
+                            &>.ag-ads-slider-item__iconbg {
+                                display: block;
+                                cursor: pointer;
+                            }
+
+                            &>.ag-ads-slider-item__img {
+                                opacity: 0.5;
+                            }
+                        }
                     }
-
-
                 }
 
                 &__iconbg {
-
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -21px 0 0 -21px;
+                    width: 42px;
+                    height: 42px;
+                    background-image: url("@{path-sprite}");
+                    background-position: -543px -0px;
+                    display: none;
                 }
 
                 &__name {

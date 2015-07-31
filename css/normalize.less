@@ -19,6 +19,7 @@ html {
 body {
     font-family: 'Fira Sans';
 	margin: 0;
+//    overflow-x: hidden;
 }
 
 // HTML5 display definitions
@@ -93,4 +94,13 @@ input[type="checkbox"] + label::before {
 }
 input[type="checkbox"]:checked + label::before {
     background-position: -126px -32px;
+}
+
+option[disabled] {
+    display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    font-weight: normal;
 }

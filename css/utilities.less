@@ -43,17 +43,17 @@
         &.info {
             width: 17px;
             height: 18px;
-            background-position: -467px -0px;
+            background-position: -408px -42px;
         }
 
         &.info_l {
             width: 22px;
             height: 22px;
-            background-position: -391px -22px;
+            background-position: -396px -0px;
 
             &:hover,
             &active {
-                background-position: -347px -22px;
+                background-position: -352px -0px;
             }
         }
 
@@ -100,16 +100,10 @@
 }
 
 .banner {
-    width: 100%;
-    height: 400px;
-    margin: 60px 0 0;
-    background-color: @body-fg;
+    margin: 60px auto 0;
 
-    &_c {
-        width: 960px;
-        height: 110px;
-        background-color: @body-fg;
-        margin: 30px auto;
+    img {
+        margin: 0 auto;
     }
 }
 
@@ -124,6 +118,22 @@
 
 .text-small {
     font-size: 14px;
+}
+
+.text-orange {
+    color: @brand-color-second;
+}
+
+.hiddden{
+    display: none;
+}
+
+#blackout {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.1;
+//    top: 0;
+    display: none;
 }
 
 .required {
@@ -149,7 +159,7 @@
         left: 15px;
         width: 24px;
         height: 25px;
-        background-position: -12px -0px;
+        background-position: -132px -0px;
         background-image: url('@{path-sprite}');
     }
 }
@@ -211,6 +221,14 @@
     .sm_r {
         text-align: right;
     }
+
+    .banner {
+        margin: 0 auto 20px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -232,6 +250,14 @@
 
     .sm_r {
         text-align: right;
+    }
+
+    .banner {
+        margin: 0 auto 20px;
+
+        img {
+            margin: 0 auto;
+        }
     }
 }
 

@@ -27,19 +27,109 @@
   ---------------------------------------------------*/
 .ag-slider-item {
   width: 100%;
-  height: 600px;
 }
-.ag-slider-item__bg {
-  width: inherit;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
+.ag-slider-item:before,
+.ag-slider-item:after {
+  content: " ";
+  display: table;
+}
+.ag-slider-item:after {
+  clear: both;
+}
+.ag-slider-item__img {
+  width: 100%;
+  margin: -600px 0 0 0;
+}
+.ag-slider-item__info {
+  width: 100%;
+  height: 600px;
 }
 .ag-slider-item__descr {
   padding: 100px 0 0 0;
   font-size: 28px;
   color: #ffffff;
 }
-.ag-slider-item__descr .title-big {
+.ag-slider-item__descr-big {
+  font-size: 40px;
   padding: 20px 0;
+  color: #ffffff;
+}
+.ag-slider-item__descr-big:hover,
+.ag-slider-item__descr-big:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ag-slider-item__descr-btn {
+  text-transform: capitalize;
+  padding: 0 45px;
+  font-size: 28px;
+}
+.ag-slider-item__descr-btn:first-of-type {
+  margin: 0 45px 0 0;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .ag-slider-item__img {
+    margin: -500px 0 0 0;
+  }
+  .ag-slider-item__info {
+    height: 500px;
+  }
+  .ag-slider-item__descr {
+    padding: 60px 0 0 0;
+    font-size: 22px;
+  }
+  .ag-slider-item__descr-big {
+    font-size: 36px;
+  }
+  .ag-slider-item__descr-btn {
+    padding: 0 45px;
+    font-size: 24px;
+  }
+  .ag-slider-item__descr-btn:first-of-type {
+    margin: 0 50px 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ag-slider-item__img {
+    margin: -345px 0 0 0;
+  }
+  .ag-slider-item__info {
+    height: 345px;
+  }
+  .ag-slider-item__descr {
+    padding: 38px 0 0 0;
+    font-size: 18px;
+  }
+  .ag-slider-item__descr-big {
+    font-size: 28px;
+  }
+  .ag-slider-item__descr-btn {
+    padding: 0 50px;
+    font-size: 20px;
+  }
+  .ag-slider-item__descr-btn:first-of-type {
+    margin: 0 53px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .ag-slider-item__img {
+    margin: -345px 0 0 0;
+  }
+  .ag-slider-item__info {
+    height: 345px;
+  }
+  .ag-slider-item__descr {
+    padding: 20px 0 0 0;
+    font-size: 14px;
+  }
+  .ag-slider-item__descr-big {
+    font-size: 18px;
+  }
+  .ag-slider-item__descr-btn {
+    padding: 0 50px;
+    font-size: 20px;
+  }
+  .ag-slider-item__descr-btn:first-of-type {
+    margin: 0 53px 0 0;
+  }
 }
